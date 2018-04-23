@@ -98,6 +98,7 @@ a {
 }
 #pie a {
   color: inherit;
+  text-decoration: none;
 }
 .contacto {
   width: 25%;
@@ -110,6 +111,9 @@ a {
 .redes_sociales {
   width: 25%;
   margin: 0 auto;
+}
+.redes_sociales img {
+  width: 10%;
 }
 .derechos {
   width: 25%;
