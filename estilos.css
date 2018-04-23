@@ -3,14 +3,14 @@ body {
   background-color: black;
 }
 
-#cabezera {
+#cabecera {
   background-color: #5b7989;
   width: 85%;
-  height: 65px;
+  height: auto;
   margin: auto;
   color: white;
   box-sizing: border-box;
-  padding: 3px;
+  padding: 15px;
   border-radius: 10px 10px 0 0;
   display: flex;
   flex-direction: row;
@@ -53,11 +53,65 @@ a {
   display: flex;
   flex-direction: row;
 }
-.img1 {
+
+#img2 {
   width: 50%;
   text-align: center;
+  transition: transform 2s;
+  transition: drop-shadow 2s;
 }
-.img2 {
+#img2 img {
+  border: 2px solid black;
+}
+#img2 img:hover {
+  transform: rotateZ(10deg);
+  -webkit-filter: drop-shadow(2px 2px #82c3a6);
+  filter: drop-shadow(2px 2px #82c3a6);
+}
+
+#img3 {
   width: 50%;
   text-align: center;
+  transition: transform 2s;
+  transition: drop-shadow 2s;
+}
+#img3 img {
+  border: 2px solid black;
+}
+#img3 img:hover {
+  transform: translate(20px,-5px);
+  -webkit-filter: drop-shadow(2px 2px #82c3a6);
+  filter: drop-shadow(2px 2px #82c3a6);
+}
+#pie {
+  background-color: #C6d5c5;
+  width: 85%;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  vertical-align: top;
+  box-sizing: border-box;
+  padding: 3px;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-direction: row;
+}
+#pie a {
+  color: inherit;
+}
+.contacto {
+  width: 25%;
+  margin: 0 auto;
+}
+.terminos {
+  width: 25%;
+  margin: 0 auto;
+}
+.redes_sociales {
+  width: 25%;
+  margin: 0 auto;
+}
+.derechos {
+  width: 25%;
+  margin: 0 auto;
 }
