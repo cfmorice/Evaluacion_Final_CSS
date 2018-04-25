@@ -2,10 +2,12 @@ body {
   font-family: "Dancing Script";
   background-color: #02010a;
 }
+
 #contenido {
   width: 900px;
   margin: 0 auto;
 }
+
 #cabecera {
   background-color: #5b7989;
   color: white;
@@ -18,12 +20,15 @@ body {
   border-radius: 10px 10px 0 0;
   animation: miAnimacion 2s;
 }
+
 #cabecera a {
   color: white;
 }
+
 .actual {
   text-decoration: none;
 }
+
 @-webkit-keyframes miAnimacion {
   0% {
     margin-top: 150%;
@@ -35,12 +40,14 @@ body {
     margin-top: 0%;
   }
 }
+
 .c1 {
   font-size: 25px;
   text-shadow: 2px 2px 2px #02010a;
   padding-left: 2%;
   width: 65%;
 }
+
 .c2, .c3, .c4 {
   width: 10%;
 }
@@ -52,19 +59,24 @@ body {
   padding: 10px 0 10px 0;
   text-align: center;
 }
+
 img {
-  border: 2px solid #02010a;
+  box-shadow: 2px 2px #02010a;
   width: 100%;
 }
+
 #imagen_secundaria {
   background-color: #d5c75f;
   width: 100%;
+  border: 1px;
   display: flex;
   flex-flow: row wrap;
 }
+
 #imagen_secundaria a {
   color: #02010a;
 }
+
 #img2 {
   width: 41%;
   text-align: center;
@@ -90,6 +102,7 @@ img {
   -webkit-filter: drop-shadow(2px 2px #82c3a6);
   filter: drop-shadow(2px 2px #82c3a6);
 }
+
 #pie {
   background-color: #C6d5c5;
   width: 100%;
@@ -99,30 +112,47 @@ img {
   vertical-align: top;
   border-radius: 0 0 10px 10px;
 }
+
 #pie a {
   color: #02010a;
-  text-decoration: none;
 }
 
-.contacto {
-  width: 20%;
-  margin: 0 auto;
-}
-.terminos {
+#pie > * {
   width: 25%;
   margin: 0 auto;
 }
-.redes_sociales {
-  width: 30%;
-  margin: 0 auto;
-}
-.derechos {
-  width: 25%;
-  margin: 0 auto;
-}
+
 .redes_sociales img {
   width: 8%;
 }
+
+#fotos {
+  background-color: #d5c75f;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.img1, .img2, .img3, .img4, .img5, .img6 {
+  width: 33.3%;
+}
+
+.img1 {
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+
+.img2, .img4, .img6 {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.img3 {
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
+}
+
 @media (max-width:899px) {
   #contenido {
     width: 100%;
@@ -143,57 +173,13 @@ img {
   #img3 {
     width: 100%;
   }
-  .contacto {
+  #pie {
+    text-align: left;
+  }
+  #pie > * {
     width: 100%;
   }
-  .terminos {
+  #fotos > * {
     width: 100%;
   }
-  .redes_sociales {
-    width: 100%;
-  }
-  .derechos {
-    width: 100%;
-  }
-  #fotos > .img1 {
-    width: 100%;
-  }
-  #fotos > .img2 {
-    width: 100%;
-  }
-  #fotos > .img3 {
-    width: 100%;
-  }
-  #fotos > .img4 {
-    width: 100%;
-  }
-  #fotos > .img5 {
-    width: 100%;
-  }
-  #fotos > .img6 {
-    width: 100%;
-  }
-
-}
-#fotos {
-  background-color: #d5c75f;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-flow: row wrap;
-}
-.img1, .img2, .img3, .img4, .img5, .img6 {
-  width: 33.3%;
-}
-.img1 {
-  -webkit-filter: blur(10px);
-  filter: blur(10px);
-}
-.img2, .img4, .img6 {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-}
-.img3 {
-  -webkit-filter: sepia(90%);
-  filter: sepia(90%);
 }
